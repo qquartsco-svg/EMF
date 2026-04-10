@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "electromagnetic-induction-foundation"
+version = "0.1.0"
+description = "Feynman Vol.2-style screening — static limit, magnetic flux, Faraday EMF, flux-rule pedagogy, lumped L"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["em_induction*"]
